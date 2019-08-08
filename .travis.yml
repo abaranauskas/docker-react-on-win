@@ -12,7 +12,7 @@ script:
 #   provider: elasticbeanstalk
 #   region: "us-east-2"
 #   app: "docker-raect"
-#   enc: "DockerRaect-env"
+#   env: "DockerRaect-env"
 #   bucket_name: elasticbeanstalk-us-east-2-783678354231
 #   bucket_path: "docker-raect"
 #   on:
