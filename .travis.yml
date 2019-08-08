@@ -1,0 +1,9 @@
+sudo: required
+servicres:
+  - docker
+
+before_install:
+  - docker build -t aidasb/docker-react-on-win -f Dockerfile.dev . 
+
+script:
+  - docker run -e CI=true aidasb/docker-react-on-win npm run test
