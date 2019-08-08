@@ -7,3 +7,16 @@ before_install:
 
 script:
   - docker run -e CI=true aidasb/docker-react-on-win npm run test
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "us-east-2"
+#   app: "docker-raect"
+#   enc: "DockerRaect-env"
+#   bucket_name: elasticbeanstalk-us-east-2-783678354231
+#   bucket_path: "docker-raect"
+#   on:
+#     branch: master
+#   access_key_id: "$AWS_ACCESS_KEY_ID"
+#   secret_access_key:
+#     secure: "$AWS_ACCESS_SECRET_KEY"
